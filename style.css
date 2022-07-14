@@ -160,15 +160,7 @@ main {
 }
 
 #main2a {
-    background-image: url(images/Rectangle\ 2.png);
-    height: 446px;
-    width: 759px;
-    padding: 0px;
-    margin: 0;
-}
-
-#main2b {
-    background-image: url(images/Rectangle\ 3.png);
+    background: #10827B;
     height: 446px;
     width: 759px;
     padding: 0px;
@@ -176,7 +168,16 @@ main {
     text-align: center;
 }
 
-#p3 {
+#main2b {
+    background-color: #00FFD9;
+    height: 446px;
+    width: 759px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.p3 {
     margin: 0px;
     margin-top: 135px;
     line-height: 115px;
@@ -188,7 +189,7 @@ main {
     text-transform: uppercase;
 }
 
-#p4 {
+.p4 {
     margin: 0px;
     padding: 0%;
     line-height: 36px;
@@ -200,7 +201,7 @@ main {
     text-transform: uppercase;
 }
 
-#p5 {
+.p5 {
     width: 450px;
     margin: auto;
     padding: 0%;
@@ -274,56 +275,6 @@ main {
     height: 450px;
 }
 
-#main3b_a1 {
-    width: 266px;
-    height: 204px;
-    /* pragraph - 18 25 */
-    font-family: 'Colfax';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
-    margin-right: 50px;
-}
-
-#main3b_a2 {
-    width: 266px;
-    height: 204px;
-    /* pragraph - 18 25 */
-    font-family: 'Colfax';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
-}
-
-#main3b_a3 {
-    width: 266px;
-    height: 204px;
-    /* pragraph - 18 25 */
-    font-family: 'Colfax';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
-    margin-right: 50px;
-}
-
-#main3b_a4 {
-    width: 266px;
-    height: 204px;
-    /* pragraph - 18 25 */
-    font-family: 'Colfax';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
-}
-
 #main3b_b {
     margin-top: 50px;
     width: 450px;
@@ -359,6 +310,10 @@ main {
     font-size: 18px;
     line-height: 25px;
     color: #000000;
+}
+
+.section3_video {
+    width: 100%;
 }
 
 #main4 {
@@ -547,6 +502,59 @@ main {
     margin-left: 30px;
 }
 
+#section5 {
+    display: flex;
+    flex-direction: row;
+    width: 1512px;
+    height: 238px;
+    background: #FFFFFF;
+}
+
+#section5_a {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 52px 139px;
+}
+
+#sec5_title {
+    width: 362px;
+    height: 76px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #10827B;
+}
+
+#sec5a_text {
+    width: 550px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+#section5_b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+    padding: 0 10px 0 0;
+}
+
+.section5b_image {
+    width: 181px;
+    height: 62px;
+}
+
 
 /* End section 4_3*/
 
@@ -711,4 +719,12 @@ footer {
     line-height: 41px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.partners {
+    width: 80%;
+    align-items: left;
+    background-color: #00FFD9;
+    display: flex;
+    justify-content: space-between;
 }
