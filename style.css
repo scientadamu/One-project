@@ -1,251 +1,258 @@
- /* Desktops and laptops ----------- */
- 
- a:link {
-     color: grey;
-     text-decoration: none;
- }
- /* visited link */
- 
- a:visited {
-     color: grey;
-     text-decoration: none;
- }
- /* mouse over link */
- 
- a:hover {
-     color: rgb(55, 255, 0);
-     text-decoration: underline;
- }
- /* selected link */
- 
- a:active {
-     color: red;
-     text-decoration: none;
- }
- 
- @media screen and (min-width:500px) {
-     #container {
-         display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
-         width: 100%;
-         height: 100%;
-     }
-     header {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: nowrap;
-         justify-content: space-around;
-         align-items: center;
-         margin: 20px 0 20px 0;
-         padding: 0 150px 0 150px;
-     }
-     #menue_list {
-         display: flex;
-         flex-direction: row;
-         width: 50%;
-         justify-content: space-around;
-     }
-     .menue_li {
-         display: flex;
-         font-size: 30px;
-         list-style: none;
-         justify-content: space-between;
-     }
-     .btn {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 10px 20px;
-         gap: 10px;
+body{
+    padding: 0%;
+    margin: 0px;
+    background: #F5F5F5;
+}
+.container{
+
+    width: 100%;
+    height: 100%;
+}
+#top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+}
+.nav_list{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: NONE;
+    width: 50%;
+     font-family: Colfax;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.mln{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#mln_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 506px;
+}
+.mln_image{
+width: 100%;
+height: 506px;
+}
+.mln_image img{
+    width: 100%;
+    height: 506px;
+    }
+.p_mln{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 115px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0%;
+    padding: 0%;
+}
+
+.p_disability{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    width: 100%;
+     font-family: 'Italian Plate No2';
+     font-style: normal;
+    font-weight: 700;
+     font-size: 30px;
+     line-height: 36px;
+     text-transform: uppercase;
+    color: #000000;
+     margin: 0px;
+     padding: 0%;
+}
+ .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+     width: 97px;
+     height: 40px;
+     background: #000000;
+     color: white;
+     font-size: large;
+    }
+.en_btn{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+     width: 97px;
+     height: 40px;
+     background: #000000;
+     color: white;
+     font-size: large;
+}
+    .menue_btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
          width: 97px;
          height: 40px;
          background: #000000;
          color: white;
          font-size: large;
-     }
-     .btn2 {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 10px 20px;
-         gap: 10px;
-         width: 170px;
-         height: 40px;
-         background: #d60000;
-         color: white;
-         font-size: large;
-     }
-     #en_btn {
-         display: flex;
-         flex-direction: column;
-         margin-right: 0px;
-     }
-     .menue_btn {
-         display: none;
-     }
-     main {
-         display: flex;
-         flex-direction: column;
-     }
-     #section1 {
-         display: flex;
-         flex-direction: row;
-         width: 100%;
-     }
-     #section1a {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         width: 50%;
-         background: #F5F5F5;
-         height: 506px;
-     }
-     #section1_p1 {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 96px;
-         line-height: 115px;
-         text-transform: uppercase;
-         color: #000000;
-         margin: 0%;
-         padding: 0%;
-     }
-     #section1_p2 {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-         font-family: 'Italian Plate No2';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 36px;
-         text-transform: uppercase;
-         color: #000000;
-         margin: 0px;
-         padding: 0%;
-     }
-     #section1b {
-         background-image: url(images/main-slider-three-img-1\ 1.png);
-         background-repeat: no-repeat;
-         background-size: cover;
-         width: 50%;
-         height: 506px;
-         margin: 0 0 50px 0;
-     }
-     #section2 {
-         display: flex;
-         flex-direction: row;
-         width: 100%;
-         margin: 0 0 120px 0;
-     }
-     #section2a {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         background: #10827B;
-         height: 446px;
-         width: 100%;
-         padding: 0px;
-         margin: 0px;
-         text-align: center;
-         color: white;
-     }
-     #section2b {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         background: #00FFD9;
-         height: 446px;
-         width: 100%;
-         padding: 0px;
-         margin: 0px;
-         text-align: center;
-         color: #000000;
-     }
-     .section2_num {
-         width: 100%;
-         font-family: 'Italian Plate No2';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 80px;
-         line-height: 80px;
-         text-transform: uppercase;
-         /* 1 - #FFFFFF */
-         color: #FFFFFF;
-         padding: 0px;
-         margin: 0px;
-     }
-     .section2_title {
-         width: 100%;
-         font-family: 'Italian Plate No2';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 36px;
-         text-transform: uppercase;
-         color: #000000;
-         padding: 0px;
-         margin: 0px;
-     }
-     .section2_text {
-         height: 51px;
-         width: 50%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 18px;
-         line-height: 25px;
-         padding: 0;
-         margin: 5px 0 30px 0;
-         text-align: justify;
-     }
-     .section2_read_more {
-         box-sizing: border-box;
-         /* Auto layout */
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 10px 20px;
-         gap: 10px;
-         width: 170px;
-         height: 40px;
-         border: 1px solid #000000;
-         background-color: transparent;
-     }
-     #section3 {
-         display: flex;
-         flex-direction: row;
-         width: 100%;
-         margin: 0 0 150px 0;
-     }
-     #section3a {
-         width: 100%;
-         height: 502px;
-         background: #000000;
-     }
-     .section3_video {
-         width: 100%;
-         height: 100%;
-     }
-     #section3b {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         height: 502px;
-         background: rgba(217, 217, 217, 0.4);
+    }
+    .btn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 170px;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    }
+    .btn1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
+        width: 170px;
+        height: 40px;
+        background: #d60000;
+        color: white;
+        font-size: large;
+        }
+#main{
+    display: flex;
+    flex-direction: column;
+}
+.statistics_section{
+    display: flex;
+    flex-direction: column;
+    margin: 117px 0 117px 0;
+}
+.accounted_for{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 446px;
+    width: 100%;
+    background: #10827B;
+}
+
+.not_accounted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 446px;
+    width: 100%;
+    background: #00FFD9;
+}
+
+.statisics_no{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Italian Plate No2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;    
+}
+.statisics_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Italian Plate No2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 0px;
+    margin: 0px;
+}
+.statisics_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 51px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0;
+    margin: 5px 0 30px 0;
+    text-align: justify;
+}
+
+.viedo_statistics{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    height: 1000%;
+    
+}
+.video{
+    width: 100%;
+    height: 502px;
+    margin-bottom: 20px;
+}
+.feauture_section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 422px;
+    background: rgba(217, 217, 217, 0.4);
+    margin-bottom: 117px;
+   
      }
      #line {
          width: 100%;
@@ -261,7 +268,7 @@
      #f_image_health {
          height: 100px;
          width: 100px;
-         padding: 0 20px 0 100px;
+         padding: 0 20px 0 10px;
      }
      #section3_p1 {
          width: 100%;
@@ -273,7 +280,7 @@
          line-height: 20px;
          text-transform: capitalize;
          color: #514D4D;
-         padding: 0 20px 0 100px;
+         padding: 0 20px 0 0px;
      }
      #section3_p2 {
          width: 132px;
@@ -285,7 +292,7 @@
          line-height: 15px;
          letter-spacing: -0.02em;
          color: #000000;
-         padding: 0 20px 0 100px;
+         padding: 0 20px 0 10px;
      }
      #section3_p3 {
          width: 424px;
@@ -296,43 +303,117 @@
          font-size: 18px;
          line-height: 25px;
          color: #000000;
-         padding: 0 20px 0 100px;
+         padding: 0 20px 0 10px;
      }
-     #section4 {
-         /* Rectangle 3 */
-         width: 100%;
-         background: rgb(249, 3, 3);
-         height: 988px;
-         background: #000000;
+
+
+     .ranking_report_section{
+        height: 500px;
+        width: 100%;
+    background: #000000;
+    }
+    .partnership{
+        width: 100%;
+        height: 308px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .partnership_p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    .partnership_icons {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       
+   }
+   .partnership_icons .icons{
+    width: 135px;
+    height: 80px;
+    align-items: baseline;
+   }
+   .p_p1{
+    width: 362px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #10827B;
+    margin: 10px 0 0 0;
+    padding: 0px;
+   }
+   .p_p2{
+        width: 362px;
+        font-family: 'Colfax';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+       }
+    .p_text{
+    width: 90%;
+    left: 139px;
+    top: 3034px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
      }
-     #section5 {
-         display: flex;
-         flex-direction: row;
-         width: 100%;
-         margin-top: 50px;
-     }
-     #section5a {
-         display: flex;
-         flex-direction: column;
-         background-color: rgb(255, 255, 255);
-         height: 160px;
-         width: 100%;
-         margin: 0px;
-         padding: 0 139px;
-     }
-     #section5_p1 {
-         display: flex;
-         align-items: center;
-         width: 100%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 24px;
-         line-height: 30px;
-         text-transform: uppercase;
-         color: #10827B;
-         margin: 0%;
-     }
+    
+    footer{
+        width: 100%;
+        height: 369px;
+        background: #000000;
+    }
+
+/* desktop view */
+@media screen and (min-width:700px) {
+    
+
+.nav_list{
+    display: flex;
+}
+.en_btn{
+    display: flex;
+}
+.menue_btn{
+    display: none;
+}
+.mln{
+    flex-direction: row;
+    width: 100%;
+    height: 506px;
+}
+.statistics_section{
+    flex-direction: row;
+    margin: 0 0px;
+}
+.viedo_statistics{
+    flex-direction: row;
+}
+.video{
+
+    width: 50%;
+    height: 502px;
+}
+.feauture_section{
+    width: 90%;
+    height: 402px;
+    margin: 10% 5%;
+    padding-bottom: 20px;
+}
+
      #section5_p2 {
          display: flex;
          align-items: center;
@@ -368,384 +449,52 @@
          width: 100%;
          padding-right: 139px;
      }
-     .section5b_images {
-         width: 130px;
-         height: 68px;
+     .partnership{
+        display: flex;
+        flex-direction: row;
+    }
+     .partnership_p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        width: 60%;
+    }
+    .partnership_icons {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       
+   }
+   .partnership_icons .icons{
+    width: 135px;
+    height: 80px;
+    align-items: baseline;
+   }
+   .p_p1{
+    width: 362px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #10827B;
+    margin: 0px 0 0 0;
+    padding: 0px;
+   }
+   .p_p2{
+    line-height: 40PX;
+    text-align: justify;
+       }
+    .p_text{
+    margin: 20PX 0 0 0px;
+    width: 65%;
+    line-height: 30PX;
+    text-align: justify;
      }
-     footer {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-         width: 100%;
-         height: 369px;
-         background: black;
-         width: 100%;
+     .partnership_icons {
+        align-items: center;
+        justify-content: space-around;
+        
      }
-     .footer_list {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: space-around;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 24px;
-         line-height: 30px;
-         color: #FFFFFF;
-         list-style: none;
-     }
- }
- 
- @media screen and (max-width:500px) {
-     #container {
-         display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
-         width: 100%;
-         height: 100%;
-     }
-     header {
-         display: flex;
-         flex-direction: row;
-         flex-wrap: nowrap;
-         justify-content: space-between;
-         align-items: center;
-         margin: 0 0 20px 0;
-     }
-     .btn {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 10px 20px;
-         gap: 10px;
-         width: 97px;
-         height: 40px;
-         background: #000000;
-         color: white;
-         font-size: large;
-     }
-     .btn2 {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 10px 20px;
-         gap: 10px;
-         width: 170px;
-         height: 40px;
-         background: #d60000;
-         color: white;
-         font-size: large;
-     }
-     #en_btn {
-         display: none;
-     }
-     #menue_list {
-         list-style: none;
-         display: none;
-         flex-direction: row;
-         justify-content: space-around;
-         align-items: center;
-         font-size: 20px;
-     }
-     .menue_btn {
-         display: flex;
-     }
-     #section1 {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-     }
-     #section1a {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         background: #F5F5F5;
-         width: 100%;
-         height: 446px;
-     }
-     #section1b {
-         background-image: url(images/main-slider-three-img-1\ 1.png);
-         width: 100%;
-         height: 446px;
-         margin: 0 0 50px 0;
-     }
-     #section1_p1 {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         margin: 0 0 20px 0;
-         padding: 0px;
-         width: 100%;
-         height: 48px;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 96px;
-         line-height: 115px;
-         text-transform: uppercase;
-         color: #000000;
-     }
-     #section1_p2 {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         margin: 0px;
-         padding: 0px;
-         width: 100%;
-         height: 48px;
-         font-family: 'Italian Plate No2';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 26px;
-         line-height: 36px;
-         text-transform: uppercase;
-         color: #000000;
-     }
-     #section2 {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         margin: 0 0 50px 0;
-     }
-     #section2a {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         background: #10827B;
-         height: 446px;
-         width: 100%;
-         padding: 0px;
-         margin: 0px;
-         text-align: center;
-         color: white;
-     }
-     #section2b {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         background: #00FFD9;
-         height: 446px;
-         width: 100%;
-         padding: 0px;
-         margin: 0px;
-         text-align: center;
-         color: #000000;
-     }
-     .section2_num {
-         width: 100%;
-         font-family: 'Italian Plate No2';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 65px;
-         line-height: 80px;
-         text-transform: uppercase;
-         padding: 0px;
-         margin: 0px;
-     }
-     .section2_title {
-         width: 100%;
-         font-family: 'Italian Plate No2';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 36px;
-         line-height: 36px;
-         text-transform: uppercase;
-         color: #000000;
-         padding: 0px;
-         margin: 0px;
-     }
-     .section2_text {
-         width: 80%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 18px;
-         line-height: 25px;
-         padding: 0;
-         margin: 5px 0 0 0;
-         text-align: justify;
-     }
-     .section2_read_more {
-         box-sizing: border-box;
-         /* Auto layout */
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         align-items: center;
-         padding: 10px 20px;
-         gap: 10px;
-         width: 170px;
-         height: 40px;
-         border: 1px solid #000000;
-         background-color: transparent;
-     }
-     #section3 {
-         margin: 0 0 50px 0;
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         margin: 0 0 0 0;
-     }
-     #section3a {
-         width: 100%;
-         height: 320px;
-         background: #000000;
-     }
-     .section3_video {
-         width: 100%;
-         height: 100%;
-     }
-     #section3b {
-         width: 100%;
-         height: 430px;
-         background: rgba(217, 217, 217, 0.4);
-     }
-     #line {
-         margin-top: 10px;
-         width: 100%;
-         height: 10px;
-         background-color: #000000;
-     }
-     #features {
-         display: flex;
-         justify-content: end;
-         margin: 0px 50px 0 0;
-         font-size: 20px;
-     }
-     #f_image_health {
-         height: 100px;
-         width: 100px;
-         padding: 0 20px 0 20px;
-     }
-     #section3_p1 {
-         width: 100%;
-         height: 20px;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 18px;
-         line-height: 20px;
-         text-transform: capitalize;
-         color: #514D4D;
-         padding: 0 20px 0 20px;
-     }
-     #section3_p2 {
-         width: 132px;
-         height: 15px;
-         font-family: 'Work Sans';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 13px;
-         line-height: 15px;
-         letter-spacing: -0.02em;
-         color: #000000;
-         padding: 0 20px 0 20px;
-     }
-     #section3_p3 {
-         width: 424px;
-         height: 104px;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 18px;
-         line-height: 25px;
-         color: #000000;
-         padding: 0 20px 0 20px;
-     }
-     #section4 {
-         /* Rectangle 3 */
-         width: 100%;
-         height: 446px;
-         background: rgb(249, 3, 3);
-     }
-     #section5 {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-     }
-     #section5a {
-         background-color: rgb(255, 255, 255);
-         height: 160px;
-         width: 100%;
-         margin: 0px;
-         padding: 0px;
-     }
-     #section5_p1 {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 24px;
-         line-height: 30px;
-         text-transform: uppercase;
-         color: #10827B;
-         margin: 0%;
-     }
-     #section5_p2 {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: 100%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 700;
-         font-size: 24px;
-         line-height: 30px;
-         text-transform: uppercase;
-         color: black;
-         margin: 0px;
-         padding: 0;
-     }
-     #section5_p3 {
-         width: 100%;
-         height: 80px;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 18px;
-         line-height: 25px;
-         color: #000000;
-         text-align: justify;
-         margin: 0;
-         padding: 0;
-     }
-     #section5b {
-         display: flex;
-         flex-direction: row;
-         justify-content: space-between;
-         align-items: center;
-         width: 100%;
-     }
-     .section5b_images {
-         width: 130px;
-         height: 68px;
-     }
-     footer {
-         display: flex;
-         flex-direction: row;
-         width: 100%;
-         height: 200px;
-         background: black;
-         width: 100%;
-     }
-     .footer_list {
-         width: 100%;
-         font-family: 'Colfax';
-         font-style: normal;
-         font-style: normal;
-         font-weight: 400;
-         font-size: 24px;
-         line-height: 30px;
-         color: #FFFFFF;
-     }
- }
+    }
