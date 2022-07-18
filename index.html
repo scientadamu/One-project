@@ -19,8 +19,16 @@
            </ul>
            <div>
             <button class="en_btn">en</button>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">HOME</a>
+                  <a href="#">ABOUT REPORT</a>
+                  <a href="#">DATA & DOCUMENTATION</a>
+                </div>
+              </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
-            <button class="menue_btn">Menue</button>
         </div> 
         </nav>
         <div class="mln">
@@ -33,6 +41,17 @@
             <div class="mln_image">
                 <img src="images/main-slider-three-img-1 1.png">
             </div>
+            <script>
+                function openNav() {
+                  document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
+
+
         </div>
     </div>
 
@@ -79,11 +98,11 @@
            <div class="ranking_report">
             <section class="report">
                 <div class="report_title">
-                    <div id="rect1_box3"></div>
-                    <div id="rect2_box3">
-                        <div id="rect4_box3"></div>
+                    <div id="rect1_box1"></div>
+                    <div id="rect2_box1">
+                        <div id="rect4_box1"></div>
                     </div>
-                    <div id="rect3_box3"></div>
+                    <div id="rect3_box1"></div>
                 </div>
                 <div class="report_sumary">
                     <p class="rp_title"> BHCPF implementation in Nigeria</p>
@@ -93,11 +112,12 @@
                  
                     <section class="report">
                         <div class="report_title">
-                            <div id="rect1_box3"></div>
-                            <div id="rect2_box3">
-                                <div id="rect4_box3"></div>
+                            <div id="rect1_box2"></div>
+                            <div id="rect2_box2">
+                                <div id="rect3_box2"></div>
+                                <div id="rect4_box2"></div>
                             </div>
-                            <div id="rect3_box3"></div>
+                         
                         </div>
                         <div class="report_sumary">
                             <p class="rp_title"> Summary Analysis of 
@@ -176,6 +196,7 @@
             </div>
 
             </footer>
-    </div>
+         
+    
 </body>
 </html>
