@@ -4,199 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>health</title>
-    <link rel="stylesheet" href="style.css">
+    <title>health Ranking</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div class="container">
-    <div id="top">
-        <nav>
-           <img src="images/ONE-logo-black.png">
-           <ul class="nav_list">
-            <li>HOME</li>
-            <li>ABOUT  REPORT</li>
-            <li>DATA & DOCUMENTATION</li>
-           </ul>
-           <div>
-            <button class="en_btn">en</button>
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                  <a href="#">HOME</a>
-                  <a href="#">ABOUT REPORT</a>
-                  <a href="#">DATA & DOCUMENTATION</a>
-                </div>
-              </div>
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-        </div> 
-        </nav>
-        <div class="mln">
-            <div id="mln_text">
-                <p class="p_mln"> 250 MLN</p>
-                <p class="p_disability"> People live with disability</p>
-                <div class="nav_button"> <button class="btn1">LEARN MORE</button></div>
-                
+    <!-- Nav -->
+    <div id="nav">
+        <img src="images/ONE-logo-black.png">
+        <ul id="menue_li"><li>HOME</li><li>ABOUT REPORT</li><li>DATA & DOCUMENTATION</li></ul>
+            <button class="btn">DOWNLOAD REPORT</button>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <div id="menue_icon" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">HOME</a> <a href="#">ABOUT REPORT</a><a href="#">DATA & DOCUMENTATION</a>
             </div>
-            <div class="mln_image">
-                <img src="images/main-slider-three-img-1 1.png">
-            </div>
-            <script>
-                function openNav() {
-                  document.getElementById("myNav").style.width = "100%";
-                }
-                
-                function closeNav() {
-                  document.getElementById("myNav").style.width = "0%";
-                }
-                </script>
-
-
         </div>
     </div>
-
-
-    <div id="main">
-
-        <div class="statistics_section">
-            <div class="accounted_for">
-                <p class="statisics_no">12,559,565,781</p>
-                <p class="statisics_title"> DELTA STATE</p>
-                <p class="statisics_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim id aenean sit nibh fermentum non purus augue.</p>
-                <button class="btn2">Read More</button>
-            </div>
-           
-            <div class="not_accounted">
-                <p class="statisics_no">36,559,565,851</p>
-                <p class="statisics_title">NOT ACCOUNTED FOR</p>
-                <p class="statisics_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim id aenean sit nibh fermentum non purus augue.</p>  
-                <button class="btn2">Read More</button>
-            </div>
-        </div>
-        <div class="viedo_statistics">
-            <video class="video" controls>
-                <source src="videos/welcome.mp4">
-                Your browser does not support the video tag.
-
-            </video>
-             <div class="feauture_section">
-                <div id="line"></div>
-                <div id="features"><strong>FEATURES</strong></div>
-                <img id="f_image_health" src="images/icons8-statistics-64 1.png">
-                <p id="section3_p1"> Nigerian's Health Ranking Annual Report</p>
-                <p id="section3_p2"> Published June 2023</p>
-                <p id="section3_p3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus, tellus eleifend vitae tristique amet dis accumsan morbi blandit. Placerat posuere interdum lectus habitasse fringilla interdum aliquam odio quisque.</p>
-                <button class="btn1">Read More</button>
-            </div>
-            <div class="section3_picture">
-            </div>
-            </div>  
-
-        <div class="ranking_report_section">
-           <div class="ranking_title">ranking_titlevfhggjnhggfddvskjkscbkjdfngk klnb vkc.knxlkkndflkjdn</div>
-           
-           <div class="ranking_report">
-            <section class="report">
-                <div class="report_title">
-                    <div id="rect1_box1"></div>
-                    <div id="rect2_box1">
-                        <div id="rect4_box1"></div>
-                    </div>
-                    <div id="rect3_box1"></div>
-                </div>
-                <div class="report_sumary">
-                    <p class="rp_title"> BHCPF implementation in Nigeria</p>
-                    <p class="rp_text">Recognising that States have yet to start accessing funds from the EMT gateway, the results of desk reviews and consultations on the status of the</p>
-                </div>
-            </section>
-                 
-                    <section class="report">
-                        <div class="report_title">
-                            <div id="rect1_box2"></div>
-                            <div id="rect2_box2">
-                                <div id="rect3_box2"></div>
-                                <div id="rect4_box2"></div>
-                            </div>
-                         
-                        </div>
-                        <div class="report_sumary">
-                            <p class="rp_title"> Summary Analysis of 
-                                2022 HEALTH Report</p>
-                            <p class="rp_text">Recognising that States have yet to start accessing funds from the EMT gateway, the results of desk reviews and consultations on the status of the</p>
-                        </div>
-                    </section>
-
-                    <section class="report">
-                        <div class="report_title">
-                            <div id="rect1_box3"></div>
-                            <div id="rect2_box3">
-                                <div id="rect4_box3"></div>
-                            </div>
-                            <div id="rect3_box3"></div>
-                        </div>
-                        <div class="report_sumary">
-                            <p class="rp_title"> BHCPF implementation in Nigeria</p>
-                            <p class="rp_text">Recognising that States have yet to start accessing funds from the EMT gateway, the results of desk reviews and consultations on the status of the</p>
-                        </div>
-                    </section>
-         </div>
-
-           </div>
-        </div>
-
-
-
-        <div class="partnership">
-            <div class="partnership_p">
-                <p class="p_p1"> COLLABORATIONS</p>
-                <p class="p_p2"> & PARTNERSHIPS</p>
-                <p class="p_text">We are committed to excellence and innovation and this can be seen in our partnerships & collaborations. Some of the partners and collaborations we have worked with over the years include: </p>
-             </div>
-            <div class="partnership_icons">             
-                <img class="icons" src="images/partnership_icon1.png">
-                <img class="icons" src="images/partnership_icon2.png">
-                <img class="icons" src="images/partnership_icon3.png">
-            </div>
-         </div>
-
-    </div>
-        <footer>
-            <div class="footer_a">
-                <ul class="footer_list">
-                    <li><a href="#">QUICK LINKS</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Issues</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-
-                <ul class="footer_list">
-                    <li>&nbsp &nbsp</li>
-                    <li><a href="#">Get Involved</a></li>
-                    <li><a href="#">Volunteer</a></li>
-                    <li><a href="#">Calendar</a> </li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-            </div>
-
-                <div class="footer_b">
-                <ul class="footer_list">
-                    <li>&nbsp &nbsp</li>
-                    <li>&nbsp &nbsp</li>
-                    <li>
-                        <a href="#"><img src="images/ONE-logo-white 1.png"></a>
-                    </li>
-                    <li><a href="#">Copyright © 2022  All Rights Reserved</a></li>
-                </ul>
-
-                <ul class="footer_list">
-                    <li><a href="#">Phone: (234) 733-3390 </a></li>
-                    <li><a href="#">E-mail: info@one.org</a></li>
-                </ul>
-            </div>
-
-            </footer>
-         
+    <!-- Nav -->
     
+<!-- Top_slider -->
+<section id="Top_slider"></section>
+<!-- Top_slider -->
+
+
+
+<!-- statistics -->
+<section id="statistics">
+    <div id="accounted_for">
+        <p class="statisics_no">12,559,565,781</p>
+        <p class="statisics_title"> DELTA STATE</p>
+        <p class="statisics_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim id aenean sit nibh fermentum non purus augue.
+            <button class="btn">Read More   	&gt;</button>
+        </p>
+    </div>
+  <div id="the_state">
+    <p class="state_p">THE STate of primary
+        health care service delivery  IN  nigeria 2019 -2021</p>   
+   </div>
+</section> 
+<!-- Statistics -->
+
+
+   <!-- /* Hospital_section */ -->
+   <div id="health_section">
+    <div class="hospital_img"> <img src="images/Hosppital 1.png"></div>
+    <div class="hospital_report">
+        <p class="hospital_report_p1">80%</p>
+        <p class="hospital_report_p2"> For this report, the gold standard is that less than 5% of
+            eligible health facilitiesare reporting stock outs of health products
+           for TB control 80% of eligible health facilities
+           Providing reports in the review quarter
+           (used instead of month based on the reporting systems
+            available), the state has adequate stock available for
+            three select health products to support outbreak 
+            (with adequacy as defined by the minimum and maximum
+            stock levels within the reporting framework), and the 
+            state has strong supply chain governance through its 
+            logistics technical working groups and logistics 
+            management coordinating units or drug management
+            agencies.</p>
+    </div>
+</div>
+<!-- /* End of hospital section */ -->
+
+<!-- /* Health ranking section  */ -->
+<section id=" health_rankin_report">
+    <div id="label">Health Ranking Report</div>
+  
+    <!-- / /* must_have */ -->
+    <div id="reports">
+            <div class=" ranking_logo">
+                <div id="d1"></div>
+                <div id="d2"></div>
+                <div id="d3"></div>
+            </div>
+            <div class=" ranking_details">
+                <p class="rp_title"> BHCPF implementation in Nigeria</p>
+                <p class="rp_text">Recognising that States have yet to start accessing funds from the EMT gateway, the results of desk reviews and consultations on the status of the</p>
+            </div>
+           </div>
+
+
+              <!-- / /* digest */ -->
+    <div id="report2">
+        <div class=" ranking_logo2">
+            <div id="dd0"></div>
+            <div id="dd1">
+                <div id="dd2"></div>
+                <div id="dd3"></div>
+            </div>
+        </div>
+        <div class=" ranking_details">
+            <p class="rp_title"> BHCPF implementation in Nigeria</p>
+            <p class="rp_text">Recognising that States have yet to start accessing funds from the EMT gateway, the results of desk reviews and consultations on the status of the</p>
+        </div>
+       </div>
+
+          <!-- / /* impliment */ -->
+    <div id="report3">
+            <div class=" ranking_logo2">
+                <div id="ddd0"></div>
+                <div id="ddd1">
+                    <div id="ddd2"></div>
+                    <div id="ddd3"></div>
+                </div>
+            </div>
+            <div class=" ranking_details">
+                <p class="rp_title"> BHCPF implementation in Nigeria</p>
+                <p class="rp_text">Recognising that States have yet to start accessing funds from the EMT gateway, the results of desk reviews and consultations on the status of the</p>
+            </div>
+           </div>
+</section>
+
+<!-- /* partnership */ -->
+<div class="partnership">
+    <p class="p_partnership">COLLABORATIONS & PARTNERSHIPS</p>
+    <div class="partnership_logos">
+        <img src="images/logo1.png">
+        <img src="images/logo2.png">
+        <img src="images/logo3.png">
+        <img src="images/logo4.png">
+        <img src="images/logo5.png">
+        <img src="images/logo6.png">
+        <img src="images/logo7.png">
+</div>
+</div>
+<!-- /* partnership */ -->
+
+<footer>
+    <!-- Quick Link (first two links) -->
+    <div class="footer_quick_link">
+        <ul class="footer_list2">
+            <li><a href="#">QUICK LINKS</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Issues</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+
+        <ul class="footer_list2">
+            <li>&nbsp &nbsp</li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Calendar</a> </li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </div>
+      <!-- Quick Link (first two links) -->
+
+         <!-- footer_logo(list with logo)  -->
+      <div class="footer_logo">
+        <ul class="footer_list">
+            <li><a href="#"><img src="images/ONE-logo-white 1.png"></a></li>
+            <li><a href="#">Copyright © 2022  All Rights Reserved</a></li>
+        </ul>
+<!-- footer_logo(list with logo) -->
+        <ul class="footer_list">
+            <li><a href="#">Phone: (234) 733-3390 </a></li>
+            <li><a href="#">E-mail: info@one.org</a></li>
+        </ul>
+    </div>
+    </footer>
+<!-- javascript for menue -->
+<script>
+    function openNav() { document.getElementById("menue_icon").style.width = "100%";}    
+    function closeNav() {document.getElementById("menue_icon").style.width = "0%";}
+    </script>
+ <!-- javascript for menue  -->
+
 </body>
 </html>
