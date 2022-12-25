@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="small-slider.css">
-</head>
+<!-- /*FOOTER start*/ -->
 <style>
-    
-/* small slider component for landing page and about page start */
 .s-slider {
   display: flex;
   flex-direction: column;
   width: 100%;
   /* background: blue; */
-  margin:0;
-padding: 0;
 }
 
 /* row-1 image slider start */
 .row-1 {
    margin:0;
-padding: 0;
+  padding: 0;
   display: flex;
   width: 100%;
   min-width: 300px;
@@ -39,7 +27,7 @@ padding: 0;
 /* <!-- row-2 start --> */
 .row-2 {
   position: absolute;
-  top: 235px;
+  top: 435px;
   display: flex;
   min-width: 320px;
   flex-direction: column;
@@ -71,10 +59,10 @@ padding: 0;
   font-weight: 400;
   font-size: 60px;
   text-transform: uppercase;
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 .no-percent>sup{
-font-size: 35px; 
+  font-size: 35px; 
 }
 
 .details{
@@ -84,7 +72,6 @@ font-size: 35px;
   max-width: 270px;
   /* background: blue; */
   width: 65%;
-
   height: 90%;
 }
 .details>p{
@@ -93,14 +80,13 @@ font-size: 35px;
   padding: 0;
   /* background: red; */
   font-family: 'Colfax';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
   width: 100%;
   text-align: left;
-
   height: 90%;
 }
 
@@ -108,28 +94,28 @@ color: #FFFFFF;
   display: none;
 }
 
-button{
+.details>button{
   position: relative;
   top:0px;
   box-sizing: border-box;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 20px;
-gap: 10px;
-position: relative;
-width: 170px;
-height: 46.37px;
-font-family: 'Colfax';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-text-transform: uppercase;
-background: #10827B;
-border: 1px solid #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  position: relative;
+  width: 170px;
+  height: 46.37px;
+  font-family: 'Colfax';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  text-transform: uppercase;
+  background: #10827B;
+  border: 1px solid #000000;
 }
 /* <!-- row-2-col1 End --> */
 
@@ -233,11 +219,9 @@ line-height: 22px;
 @media screen and (min-width: 785px) {
   button{margin-top: 0;  top:-35px;}
 }
-/* <!-- small slider component for landing page and about page End --> */
 </style>
-<body>
-    <!-- small slider component for landing page and about page start -->
-    <div class="s-slider">
+
+<div class="s-slider">
         <!-- row-1 image slider start -->
         
         <div class="row-1">
@@ -282,5 +266,3 @@ line-height: 22px;
 
     </div>
     <!-- small slider component for landing page and about page End -->
-</body>
-</html>

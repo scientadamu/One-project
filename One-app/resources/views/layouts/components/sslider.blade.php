@@ -1,37 +1,36 @@
 <style>
-    /* small slider component for landing page and about page start */
 .s-slider {
   display: flex;
   flex-direction: column;
   width: 100%;
   /* background: blue; */
+  margin:0;
+padding: 0;
 }
 
-/* row-1 image slider start */
+
 .row-1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-width: 300px;
-  height: 400px;
-  min-width: 320px;
-  /* background: green; */
+    margin:0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+    min-width: 320px;
+    background: green;
 }
 .row-1 > img {
   height: 100%;
+  width: 100%;
 }
-/* row-1 image slider End */
 
-/* <!-- row-2 start --> */
 .row-2 {
-  position: absolute;
-  top: 235px;
   display: flex;
   min-width: 320px;
   flex-direction: column;
   width: 100%;
 }
-/* <!-- row-2-col1 start --> */
+
 .row-2-col1 {
   display: flex;
   flex-direction: row;
@@ -74,20 +73,19 @@ font-size: 35px;
   height: 90%;
 }
 .details>p{
-  display: flex;
-  margin:40px 0 0 0;
-  padding: 0;
-  /* background: red; */
-  font-family: 'Colfax';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #FFFFFF;
-  width: 100%;
-  text-align: left;
-
-  height: 90%;
+    display: flex;
+    margin:40px 0 0 0;
+    padding: 0;
+    /* background: red; */
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    height: 90%;
 }
 
 .details>p>span{
@@ -95,31 +93,29 @@ color: #FFFFFF;
 }
 
 button{
-  position: relative;
-  top:0px;
-  box-sizing: border-box;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 20px;
-gap: 10px;
-position: relative;
-width: 170px;
-height: 46.37px;
-font-family: 'Colfax';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height, or 125% */
-text-transform: uppercase;
-background: #10827B;
-border: 1px solid #000000;
+    position: relative;
+    top:0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    position: relative;
+    width: 170px;
+    height: 46.37px;
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    text-transform: uppercase;
+    background: #10827B;
+    border: 1px solid #000000;
 }
-/* <!-- row-2-col1 End --> */
 
-/* <!-- row-2-col2 Start --> */
 .row-2-col2 {
   margin: 0;
   padding: 0;
@@ -175,10 +171,6 @@ border: 1px solid #000000;
 .add{
     color: #b51472;
 }
-/* <!-- row-2-col2 End --> */
-
-/* <!-- row-2 End --> */
-
 @media screen and (min-width: 410px) {
   .details>p{
     font-size: 14px;
@@ -219,52 +211,39 @@ line-height: 22px;
 @media screen and (min-width: 785px) {
   button{margin-top: 0;  top:-35px;}
 }
-/* <!-- small slider component for landing page and about page End --> */
 </style>
-
- <!-- small slider component for landing page and about page start -->
- <div class="s-slider">
-
-<!-- row-1 image slider start -->
-<div class="row-1">
-    <img src="images/about_top_pic.png">
-</div>
- <!-- row-1 image slider End -->
- 
- <!-- row-2 start -->
- <div class="row-2">
-     <!-- row-2-col1 start -->
-     <div class="row-2-col1">
-        <div class="no-percent">
-            80<sup>%</sup>
+    <div class="s-slider">
+        <div class="row-1">
+            <img src="images/about_top_pic.png">
         </div>
-        <div class="details">
-            <p>
-                For this report, the gold standard is that less than 
-                5% of eligible health facilities used instead  
-                 <span> of month based on the reporting systems available), the state has adequate </span>
-            </p>
-            <button>Read More &nbsp; ></button>
+        
+         <div class="row-2">
+            
+             <div class="row-2-col1">
+                <div class="no-percent">
+                    80<sup>%</sup>
+                </div>
+                <div class="details">
+                    <p>
+                        For this report, the gold standard is that less than 
+                        5% of eligible health facilities used instead  
+                         <span> of month based on the reporting systems available), the state has adequate </span>
+                    </p>
+                    <button>Read More &nbsp; ></button>
+                </div>
+            </div>
+             
+            <div class="row-2-col2">
+                <p>
+                    THE STate of primary
+                    health care service delivery <span class="in">&nbsp;in&nbsp;</span>&nbsp;nigeria
+                    <div class="hr">&nbsp;</div>
+                    <p>
+                        <span class="add">+ &nbsp;</span>
+                        &nbsp;2019 -2021
+                    </p>
+                </p>
+            </div>
         </div>
     </div>
-     <!-- row-2-col1 End -->
-
-     <!-- row-2-col2 Start -->
-    <div class="row-2-col2">
-        <p>
-            THE STate of primary
-            health care service delivery <span class="in">&nbsp;in&nbsp;</span>&nbsp;nigeria
-            <div class="hr">&nbsp;</div>
-            <p>
-                <span class="add">+ &nbsp;</span>
-                &nbsp;2019 -2021
-            </p>
-        </p>
-    </div>
-    <!-- row-2-col2 End -->
-
-</div>
-<!-- row-2 End -->
-
-</div>
-<!-- small slider component for landing page and about page End -->
+   

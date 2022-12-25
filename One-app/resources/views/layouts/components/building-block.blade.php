@@ -58,14 +58,15 @@ color: #000000;
     
 }
 .circle{
-box-sizing: border-box;
-position: relative;
-width: 100px;
-height: 104px;
-background: #A9E1E4;
-border: 4px solid #FFFFFF;
-border-radius: 100%;
+    box-sizing: border-box;
+    position: relative;
+    width: 100px;
+    height: 104px;
+    background: #A9E1E4;
+    border: 4px solid #FFFFFF;
+    border-radius: 100%;
 }
+.circle>img{width:100%; height:100%}
 .s-name{
 position: relative;
 /* width: 133px; */
@@ -79,10 +80,11 @@ text-align: center;
 text-transform: capitalize;
 color: #000000;
 }
-#service-mh{display: none;}
+#service-3,#service-6,#service-9{display: none;}
+
 @media screen and (min-width: 400px) {
-    #service-mh{display: flex;}
     #row-2-row-3{display: none;}
+    #service-3,#service-6,#service-9{display: flex;}
 }
 
 @media screen and (min-width: 800px) {
@@ -106,7 +108,7 @@ color: #000000;
                 The BUILDING BLOCKS <br />
                 OF A HEALTH SYSTEM
             </p>
-            <img src="images/networking.png" alt="networking img">
+            <img src="{{url('images/networking.png')}}" alt="networking img">
             <p>
                 PEOPLE
             </p>
@@ -115,52 +117,70 @@ color: #000000;
             <div class="row-2-row">
 
                 <div class="services" id="service-1">
-                    <div class="circle"></div>
+                    <div class="circle">
+                    <img src="{{url('images/governance.png')}}" alt="governance img">
+                    </div>
                     <span class="s-name">Governance</span>
                 </div>
 
                 <div class="services"  id="service-2">
-                    <div class="circle"></div>
+                    <div class="circle">
+                    <img src="{{url('images/medicin.png')}}" alt="medicin img">
+                    </div>
                     <span class="s-name">Medicine <br/> & Technology</span>
                 </div>
 
-                <div class="services" id="service-mh">
-                    <div class="circle"></div>
+                <div class="services" id="service-3">
+                    <div class="circle">
+                    <img src="{{url('images/infor.png')}}" alt="infor img">
+                    </div>
                     <span class="s-name">Information</span>
                 </div>
             </div>
          
             <div class="row-2-row">
-                <div class="services" id="service-1">
-                    <div class="circle"></div>
+                <div class="services" id="service-4">
+                    <div class="circle">
+                     <img src="{{url('images/hr.png')}}" alt="hr img">
+                    </div>
                     <span class="s-name">Human Resources</span>
                 </div>
 
-                <div class="services"  id="service-2">
-                    <div class="circle"></div>
+                <div class="services"  id="service-5">
+                    <div class="circle">
+                     <img src="{{url('images/delivery.png')}}" alt="delivery img">
+                    </div>
                     <span class="s-name">Service <br/> Delivery</span>
                 </div>
 
-                <div class="services" id="service-mh">
-                    <div class="circle"></div>
-                    <span class="s-name">Financing</span>
+                <div class="services" id="service-6">
+                    <div class="circle">
+                    <img src="{{url('images/finance.png')}}" alt="finance img">
+                    </div>
+                    <span class="s-name">Finance1</span>
                 </div>
             </div>
 
             <div class="row-2-row" id="row-2-row-3">
-                <div class="services" id="service-1">
-                    <div class="circle"></div>
+                <div class="services" id="service-7">
+                    <div class="circle">
+                    <img src="{{url('images/infor.png')}}" alt="infor img">
+                    </div>
                     <span class="s-name">Information</span>
                 </div>
 
-                <div class="services"  id="service-2">
-                    <div class="circle"></div>
-                    <span class="s-name">Financing <br/> & Technology</span>
+                <div class="services"  id="service-8">
+                    <div class="circle">
+                    <img src="{{url('images/finance.png')}}" alt="finance img">
+                    </div>
+                    <span class="s-name">Finance2</span>
                 </div>
 
-                <div class="services" id="service-mh">
-                    <div class="circle"></div>
-                    <span class="s-name">Information</span>
+                <div class="services" id="service-6">
+                    <div class="circle">
+                    <img src="{{url('images/finance.png')}}" alt="finance img">
+                    </div>
+                    <span class="s-name">Finance2</span>
                 </div>
             </div>
         </div>

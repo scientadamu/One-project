@@ -20,8 +20,10 @@
     <body class="antialiased">
     @component('layouts.components.navbar')
     @endcomponent
-    
-    @component('layouts.components.footer')
+    @component('layouts.components.small-slider')
     @endcomponent
-    </body>
+
+  
+    
+     </body>
 </html>

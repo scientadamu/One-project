@@ -7,24 +7,9 @@
   justify-content: center;
   align-items: center;
   background: black;
-  color: white;
+  /* color: white; */
   min-width: 350px;
 }
-.f-list, a{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background:red; */
-  color: white;}
-a:link {
-  text-decoration: none;color: white;}
-a:visited {
-  text-decoration: none;}
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;}
 ul {
   list-style: none;
   font-family: 'Colfax';
@@ -36,6 +21,7 @@ ul {
 font-weight: 500;
 font-size: 18px;
 line-height: 21px;
+background:blue;
   }
 .l-container{
   gap: 5rem;
@@ -70,6 +56,7 @@ line-height: 21px;
   justify-content: center;
   align-items: center;
   min-width: 350px;
+  text-align:center;
   /* background: red; */
 }
   /* f-column2  end*/
@@ -78,7 +65,7 @@ line-height: 21px;
   display: flex;
   margin: 0;
   padding: 0;
-  background: black;
+  background: red;
   justify-content: center;
   align-items: center;}
 #f-col3{
@@ -94,7 +81,9 @@ line-height: 21px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;}
+  align-items: center;
+  /* background:red; */
+}
 .f-list3>li>h5>button{
   display: flex;
   flex-direction: row;
@@ -107,7 +96,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
-  background: #00FFD9;
+  /* background: #00FFD9; */
+  /* background: red; */
   justify-content: center;
   align-items: center;}
 #f-col3-hide{display: none;}
@@ -126,8 +116,8 @@ line-height: 20px;
   min-width: 600px;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-  /* background: green; */
+  margin-left: 0px;
+  background: green;
 }
 /* f-column1 end */
 #l-container-1{
@@ -137,7 +127,7 @@ line-height: 20px;
   /* background: blue; */
   width: 100%;
 }
-#l-container-1>#f-col3-hide{ position: relative;top: -2rem;
+#l-container-1>#f-col3-hide{ position: relative;top: 0rem;
   display: flex;
   width: 30%;
   margin-top: 0;}
@@ -158,7 +148,12 @@ line-height: 20px;
     min-width: 950px;
   }
 #f-col1{
-  margin-left: 100px;
+  margin-left: 30px;
+  background:red;
+  min-width:320px
+}
+.l-item{
+  /* font-size:30px; */
 }
 #f-col3{
   margin-right: 100px;
@@ -176,7 +171,7 @@ line-height: 20px;
                     <li>
                         <h5 class="l-item">QUICK LINKS</h5>
                     </li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="f-a">Home</a></li>
                     <li><a href="#">Issues</a></li>
                     <li><a href="#">Media</a></li>
                     <li><a href="#">News</a></li>
@@ -185,7 +180,7 @@ line-height: 20px;
                     <li>
                         <h5>&nbsp;</h5>
                     </li>
-                    <li class='l-item'><a href="#" l-item>Get Involved</a></li>
+                    <li><a href="#" l-item>Get Involved</a></li>
                     <li><a href="#">Volunteer</a></li>
                     <li><a href="#">Calendar</a></li>
                     <li><a href="#">Events</a></li>
