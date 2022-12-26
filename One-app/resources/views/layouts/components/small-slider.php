@@ -57,12 +57,14 @@
   font-family: 'Italian Plate No2';
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 80px;
   text-transform: uppercase;
   color: #FFFFFF;
+  /* color: red; */
 }
 .no-percent>sup{
   font-size: 35px; 
+  /* color:red; */
 }
 
 .details{
@@ -215,9 +217,12 @@ line-height: 22px;
 }
 @media screen and (min-width: 733px) {
   button{margin-top: 0;  top:-35px;}
+  .row-1 {height:500px;}
 }
 @media screen and (min-width: 785px) {
   button{margin-top: 0;  top:-35px;}
+  .row-1 {height:600px;}
+  .row-2 {top: 450px;}
 }
 </style>
 
