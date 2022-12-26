@@ -22,6 +22,8 @@
     @endcomponent
     @component('layouts.components.small-slider')
     @endcomponent
+    @component('layouts.components.state-status')
+    @endcomponent
 
   
     

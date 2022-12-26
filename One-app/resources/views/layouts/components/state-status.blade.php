@@ -1,11 +1,13 @@
 <style>
     .status {
+      position:absolute; 
+      top:884px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   background: black;
-  min-width: 300px;
+  min-width: 320px;
 }
 .status-title {
   display: flex;
@@ -112,60 +114,94 @@ color: #000000;
 }
 
 @media screen and (min-width: 600px) {
+  .status {
+    top:734px;
+    min-width: 620px;
+    /* background:red; */
+  }
     .state1-2, .state3-4{flex-direction: row;}
     #state-4{display: flex;}
     .status-btn>button{left: 185px;}
 }
+@media screen and (min-width: 733px) {
+  /* .status { */
+    /* top:735px;
+    height:100% */
+    /* background:red; */
+  /* } */
+  /* .status-btn{background:red;} */
+}
+@media screen and (min-width: 785px) {
+  .status {
+    top:750px;
+    /* background:red; */
+  }
+}
+
+
+
+
 
 @media screen and (min-width: 900px) {
+  .status {
+    /* top:734px; */
+    min-width: 900px;
+    /* background:red; */
+  }
+
+  #state-4{display: none;}
     .status-states{flex-direction: row; justify-content: center;}
-    #state-4{display: none;}
-    .status-btn>button{left: 332px;}
+    .status-btn>button{left: 0px;}
 }
+
+
+
+
+
+
 </style>
 
 <div class="status">
-        
-        <div class="status-title">
-          <p>
-            Status of <br />
-            health care <br />provision funds
-          </p>
-        </div>
+  <div class="status-title">
+    <p>
+      Status of <br />
+      health care <br />provision funds
+    </p>
+  </div>
   
-        <div class="status-states">
-          <div class="state1-2">
-              <div class="state" id="state-1">
-              <div class="state-img">
-                  <img src="images/abia.png" alt="abia.png" />
-              </div>
-              <span class="state-name">Abia State</span>
-              </div>
-  
-              <div class="state" id="state-2">
-              <div class="state-img">
-                  <img src="images/abia.png" alt="abia.png" />
-              </div>
-              <span class="state-name">Abia State</span>
-              </div>
-      </div>
-      <div class="state3-4">
-          <div class="state" id="state-3">
-            <div class="state-img">
-              <img src="images/abia.png" alt="abia.png" />
-            </div>
-            <span class="state-name">Abia State</span>
-          </div>
-          <div class="state" id="state-4">
-              <div class="state-img">
-                <img src="images/abia.png" alt="abia.png" />
-              </div>
-              <span class="state-name">Abia State</span>
-            </div>
-      </div>
+  <div class="status-states">
+    <div class="state1-2">
+      <div class="state" id="state-1">
+        <div class="state-img">
+          <img src="images/abia.png" alt="abia.png" />
         </div>
-  
-        <div class="status-btn">
-          <button>READ MORE ></button>
-        </div>
+        <span class="state-name">Abia State</span>
       </div>
+  
+      <div class="state" id="state-2">
+        <div class="state-img">
+          <img src="images/abia.png" alt="abia.png" />
+        </div>
+        <span class="state-name">Abia State</span>
+      </div>
+    </div>
+
+    <div class="state3-4">
+      <div class="state" id="state-3">
+        <div class="state-img">
+          <img src="images/abia.png" alt="abia.png" />
+        </div>
+        <span class="state-name">Abia State</span>
+      </div>
+      <div class="state" id="state-4">
+        <div class="state-img">
+          <img src="images/abia.png" alt="abia.png" />
+        </div>
+        <span class="state-name">Abia State</span>
+      </div>
+    </div>
+  
+    <div class="status-btn">
+      <button>READ MORE ></button>
+    </div>
+</div>
