@@ -181,7 +181,9 @@
     }
     @media screen and (min-width: 921px) {
         nav{
-            position: relative;
+            position:fixed;
+            top:0;
+            left:0;
             width:100%;
             height:130px;
             /* background:red; */

@@ -1,13 +1,16 @@
 <!-- /*FOOTER start*/ -->
 <style>
 .f-container{
+  position:relative;
+  top:165px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: black;
-  /* color: white; */
+  /* background: red; */
+  color: white;
   min-width: 350px;
 }
 ul {
@@ -21,7 +24,8 @@ ul {
 font-weight: 500;
 font-size: 18px;
 line-height: 21px;
-background:blue;
+/* background:blue; */
+/* color:red; */
   }
 .l-container{
   gap: 5rem;
@@ -35,9 +39,16 @@ background:blue;
 /* f-column1  */
 #f-col1 {
   min-width: 250px;
-  background: black;}
+  background: black;
 /* f-column1 end */
 /* f-column2 start  */
+color:red;
+}
+.f-a{
+  /* background:red; */
+  
+  color:white;
+}
 #f-col2{
   position: relative;
   left: 0;
@@ -65,7 +76,7 @@ background:blue;
   display: flex;
   margin: 0;
   padding: 0;
-  background: red;
+  /* background: red; */
   justify-content: center;
   align-items: center;}
 #f-col3{
@@ -149,7 +160,7 @@ line-height: 20px;
   }
 #f-col1{
   margin-left: 30px;
-  background:red;
+  /* background:red; */
   min-width:320px
 }
 .l-item{
@@ -161,7 +172,6 @@ line-height: 20px;
  }
 /*FOOTER end*/
 </style>
-
 <footer class="f-container">
      <!-- footer start -->
         <!-- column1 start -->
@@ -172,9 +182,9 @@ line-height: 20px;
                         <h5 class="l-item">QUICK LINKS</h5>
                     </li>
                     <li><a href="#" class="f-a">Home</a></li>
-                    <li><a href="#">Issues</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="#" class="f-a">Issues</a></li>
+                    <li><a href="#" class="f-a">Media</a></li>
+                    <li><a href="#" class="f-a">News</a></li>
                 </ul>
                 <ul class="f-list">
                     <li>
