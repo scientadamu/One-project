@@ -2,7 +2,7 @@
 <style>
 .f-container{
   position:relative;
-  top:165px;
+  top:314px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -151,6 +151,7 @@ line-height: 20px;
 }
  @media screen and (min-width: 921px) {
   .f-container{
+    top:150px;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;

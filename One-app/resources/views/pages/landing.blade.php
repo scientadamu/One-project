@@ -389,7 +389,7 @@
       left: 185px;
     }
   }
-  @media screen and (min-width: 733px) {
+j                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @media screen and (min-width: 733px) {
     button{margin-top: 0;  top:-35px;}
     .row-1 {height:500px;}
     .status {
@@ -526,7 +526,7 @@
     </div>
      <!--State status end-->
      
-     @include('layouts.components.Footer')
+     @include('layouts.components.features')
 
 
      </body>

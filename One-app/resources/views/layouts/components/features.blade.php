@@ -1,23 +1,28 @@
 <style>
     .features{
+    position:relative;
+    top:364px;
+    left:0;
     margin: 0;
     padding: 0;
     background: #FFFFFF;
+    /* background: blue; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 320px;
-    min-width: 300px;
+    min-width: 320px;
 }
-.features-block-diagram{
+    .features-block-diagram{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
     height: 90%;
     min-width: 300px;
-    /* background: white; */
+    background: white;
+    /* background: red; */
 }
 
 .features>.features-block-diagram>img{
@@ -29,6 +34,7 @@
     /* position: relative; */
     /* background: red; */
 }
+
 
 @media screen and (min-width: 500px) {
     .features{
@@ -52,6 +58,16 @@
         /* background: red; */
     }
 } 
+
+@media screen and (min-width: 620px) {
+    .features{top:213px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .features{top:170px;
+    }
+}
 
 </style>
 <div class="features">
