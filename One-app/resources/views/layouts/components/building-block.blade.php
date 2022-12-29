@@ -104,52 +104,57 @@
     }
 
 </style>
-
 <div class="building-block">
-    <div class="row-1">
-        <p>
-        The BUILDING BLOCKS <br />
-        OF A HEALTH SYSTEM
-        </p>
-        <img src="{{url('images/networking.png')}}" alt="networking img">
-        <p>
-        PEOPLE
-        </p>
-    </div>
-    <div class="row-2">
-        <div class="row-2-row">
-            <div class="services" id="service-1">
-                <div class="circle">
-                    <img src="{{url('images/governance.png')}}" alt="governance img">
-                </div>
-                <span class="s-name">Governance</span>
-            </div>
-            <div class="services"  id="service-2">
-                <div class="circle">
-                    <img src="{{url('images/medicin.png')}}" alt="medicin img">
-                </div>
-                <span class="s-name">Medicine <br/> & Technology</span>
-            </div>
-            <div class="services" id="service-3">
-                <div class="circle">
-                    <img src="{{url('images/infor.png')}}" alt="infor img">
-                </div>
-                <span class="s-name">Information</span>
-            </div>
+        <div class="row-1">
+            <p>
+                The BUILDING BLOCKS <br />
+                OF A HEALTH SYSTEM
+            </p>
+            <img src="{{url('images/networking.png')}}" alt="networking img">
+            <p>
+                PEOPLE
+            </p>
         </div>
-        <div class="row-2-row">
-            <div class="services" id="service-4">
-                <div class="circle">
-                    <img src="{{url('images/hr.png')}}" alt="hr img">
+        <div class="row-2">
+            <div class="row-2-row">
+
+                <div class="services" id="service-1">
+                    <div class="circle">
+                    <img src="{{url('images/governance.png')}}" alt="governance img">
+                    </div>
+                    <span class="s-name">Governance</span>
                 </div>
-                <span class="s-name">Human Resources</span>
+
+                <div class="services"  id="service-2">
+                    <div class="circle">
+                    <img src="{{url('images/medicin.png')}}" alt="medicin img">
+                    </div>
+                    <span class="s-name">Medicine <br/> & Technology</span>
+                </div>
+
+                <div class="services" id="service-3">
+                    <div class="circle">
+                    <img src="{{url('images/infor.png')}}" alt="infor img">
+                    </div>
+                    <span class="s-name">Information</span>
+                </div>
             </div>
+         
+            <div class="row-2-row">
+                <div class="services" id="service-4">
+                    <div class="circle">
+                     <img src="{{url('images/hr.png')}}" alt="hr img">
+                    </div>
+                    <span class="s-name">Human Resources</span>
+                </div>
+
                 <div class="services"  id="service-5">
                     <div class="circle">
-                    <img src="{{url('images/delivery.png')}}" alt="delivery img">
+                     <img src="{{url('images/delivery.png')}}" alt="delivery img">
                     </div>
                     <span class="s-name">Service <br/> Delivery</span>
                 </div>
+
                 <div class="services" id="service-6">
                     <div class="circle">
                     <img src="{{url('images/finance.png')}}" alt="finance img">
@@ -181,4 +186,4 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>

@@ -4,20 +4,18 @@
         padding: 0;
     }
     nav {
-        margin: 0 0;
+        position:fixed;
+        left:0;
+        top:0;
         display: flex;
         align-items: center;
         justify-content: space-between;
         background: #F5F5F5;
-        /* background: red; */
         width: 100%;
         height: 140px;
         min-width: 320px;
     }
-
-
-    /* Header logo section */
-    .h-logo-section {
+    /* Header logo section */.h-logo-section {
         display: flex;
         align-items: center;
         width: 82px;
@@ -28,11 +26,7 @@
         width: 100%;
         height: 100%;
     }
-    /* Header logo section */
-
-
-    /* Menue section */
-    .menue-list {
+    /* Menue section */.menue-list {
         display: none;
         width: 100%;
         gap: 20px;
@@ -49,7 +43,7 @@
         cursor: pointer;
     }
     .menue>.menue-list>li{
-    color:#10827B;
+     color:#10827B;
     }
     .menue>.menue-list>li>a:hover{
         background: #10827B;
@@ -59,7 +53,6 @@
         width: 248px;
         height: 70px;
         background: #10827B;
-        /* background: red; */
         border: none;
         display: none;
         flex-direction: row;
@@ -78,18 +71,14 @@
         color:#10827B;
         cursor: pointer;
     }
-    /* Menue section */
-
-
-    /* toggle section */
-    .h-toggle-section {
+    /* toggle section */.h-toggle-section {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 82px;
         margin: 0;
-    }
-    .h-toggle-section>.btn {
+     }
+     .h-toggle-section>.btn {
         display: none;
         justify-content: center;
         align-items: center;
@@ -104,26 +93,23 @@
         color: white;
         border: none;
         margin-right: 20px;
-    }
-    .h-toggle-section>.btn:hover{
+     }
+     .h-toggle-section>.btn:hover{
         background: white;
         color:#10827B;
         cursor: pointer;
-    }
-    .toggle-icon {
+     }
+     .toggle-icon {
         font-size: 40px;
         margin-right: 40px;
         color: #10827B;
         cursor: pointer;
-    }
-    .toggle-icon:hover{
+      }
+     .toggle-icon:hover{
         /* background: white; */
         color:white;
     }
-
-
-    /* overlay style start*/
-    .overlay {
+    /* overlay style start*/.overlay {
         height: 100%;
         width: 0;
         position: fixed;
@@ -138,40 +124,40 @@
         -moz-transition: 0.5s;
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
-    }
-    .overlay-content {
+     }
+     .overlay-content {
         position: relative;
         top: 25%;
         width: 100%;
         text-align: center;
         margin-top: 30px;
-    }
-    .overlay a {
+     }
+     .overlay a {
         padding: 8px;
         text-decoration: none;
         font-size: 36px;
         color: #818181;
         display: block;
         transition: 0.3s;
-    }
-    .overlay a:hover,
-    .overlay a:focus {
+     }
+     .overlay a:hover,
+     .overlay a:focus {
         color: #f1f1f1;
-    }
-    .overlay .closebtn {
+     }
+     .overlay .closebtn {
         position: absolute;
         top: 20px;
         right: 45px;
         font-size: 60px;
-    }
-    .overlay a {
+     }
+     .overlay a {
         font-size: 20px
-    }
-    .overlay .closebtn {
+     }
+     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
-    }
+     }
     /* overlay style End*/
     /* -----------------------------------------nav---------------------------- */
     @media screen and (min-width: 600px) {
@@ -181,50 +167,32 @@
     }
     @media screen and (min-width: 921px) {
         nav{
-            position:fixed;
-            top:0;
-            left:0;
-            width:100%;
-            height:130px;
-            /* background:red; */
+        top:0;
+        left:0;
+        width:100%;
+        height:130px;
+        /* background:red; */
         min-width: 921px;
         margin-right:0;
         padding-right:0;
         }
     }
     @media screen and (min-width: 941px) {
-        .menue>.btn {
-            display: none;
-        }
-        .h-toggle-section>.btn {
-            display: flex;
-        }
-        .h-toggle-section>.toggle-icon {
-            display: none;
-        }
-        .menue-list {
-            display: flex;
-        }
-    }
+        .menue>.btn {display: none;}
+        .h-toggle-section>.btn { display: flex;}
+        .h-toggle-section>.toggle-icon { display: none;}
+        .menue-list {display: flex;}}
+
     @media screen and (min-width: 1100px) {
-        .menue-list {
-            gap: 50px;
-        }
-        .h-logo-section {
-            margin: 0 0 0 100px;
-        }
-        .h-toggle-section {
-            margin: 0 77px 0 0;
-        }
-    }
+        .menue-list {gap: 50px;}
+        .h-logo-section {margin: 0 0 0 100px;}
+        .h-toggle-section {margin: 0 77px 0 0;}}
 </style>
 
-    <nav>
+<nav>
         <section class="h-logo-section">
             <img src="images/ONE-logo-black.png" alt="h-logo">
         </section>
-
-
         <section class="menue">
             <button class="btn">DOWNLOAD REPORT</button>
             <ul class="menue-list">
@@ -233,8 +201,6 @@
                 <li><a href="#" class="menue-item">DATA & DOCUMENTATION</a></li>
             </ul>
         </section>
-
-
         <section class="h-toggle-section">
             <button class="btn">DOWNLOAD REPORT</button>
             <span class='toggle-icon' onclick="openNav()">&#9776; </span>
@@ -245,8 +211,9 @@
                     <a href="#">ABOUT REPORT</a>
                     <a href="#">DATA & DOCUMENTATION</a>
         </section>
+         <!-- javascript for menue -->
+        <script> function openNav() { document.getElementById("menue_icon").style.width = "100%"; } function closeNav() { document.getElementById("menue_icon").style.width = "0%"; }</script>
+        <!-- javascript for menue  -->
     </nav>
 
-    <!-- javascript for menue -->
-    <script> function openNav() { document.getElementById("menue_icon").style.width = "100%"; } function closeNav() { document.getElementById("menue_icon").style.width = "0%"; }</script>
-    <!-- javascript for menue 
+</div>

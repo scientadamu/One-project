@@ -6,9 +6,7 @@
     a:visited, a:link{
         text-decoration:none;
     }
-    .f-container{
-        position:relative;
-        top:130px;
+    .Fcontainer{
         width:100%;
         display:flex;
         flex-direction:column;
@@ -16,6 +14,8 @@
         justify-content:center;
         background:black;
         min-width:320px;
+        /* background: red; */
+        /* height:100vh; */
     }
     .f-col-1{
         height: 250px;
@@ -135,10 +135,13 @@
         text-align:center;
         }
         @media screen and (min-width: 650px) {
-        footer{min-width:690px;}
-        .f-btn{position:relative; left:-1rem;}
-        .f-col-3{display:none}
-            .f-col-1{width:90%;justify-content:space-between;}
+        footer{
+            min-width:690px;
+        }
+            .f-col-1{
+            width:90%;
+            justify-content:space-between;
+        }
         .f-col-1-contents{
             height:100%;
             /* background:yellow; */
@@ -146,16 +149,17 @@
             margin:0 50px;
             min-width:270px;
         }
-        .f-col-3-contents-hide{display:flex;}
-        .f-col-3-contents-hide{display:flex;}
+        .f-col-3-contents-hide{
+            display:flex; 
+    }
         }
         @media screen and (min-width: 950px) {
         .f-col-2{display:none;}
         .f-col-2-hide{display:flex;}
     }
-</style>
+    </style>
 
-<div class='f-container'>
+<div class='Fcontainer'>
     <section class="f-col-1" >
       <div class="f-col-1-contents">
         <p class="list-title">QUICK LINKS</p>
@@ -178,7 +182,7 @@
       <section class="f-col-2-hide" >
       <img src="images/ONE-logo-white 1.png">
         <p>Copyright © 2022 All Rights Reserved</p>          
-        </section>
+    </section>
   
       <div class="f-col-3-contents-hide">
        <button class='f-btn'> BHCPF REPORT &gt;</button>

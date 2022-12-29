@@ -526,7 +526,8 @@ j                                                                               
     </div>
      <!--State status end-->
      
-     @include('layouts.components.features')
+     @include('layouts.components.building-block')
+
 
 
      </body>
