@@ -1,14 +1,10 @@
 <style>
-    body{
-        margin:0;
-        padding:0;
-    }
     a:visited, a:link{
         text-decoration:none;
     }
     .f-container{
         position:relative;
-        top:130px;
+        /* top:130px; */
         width:100%;
         display:flex;
         flex-direction:column;
@@ -74,6 +70,12 @@
         font-size: 24px;
         line-height: 30px;
         color: #FFFFFF;}
+
+        .f-list>li>a:hover{
+        color:#00FFD9;
+        /* color:red; */
+        cursor: pointer;}
+
     .f-btn{
         margin:40px 0 5px 0;
         display: flex;
@@ -86,6 +88,11 @@
         height: 40px;
         background: #00FFD9;
     }
+    .f-btn:hover{
+        background:#FFFFFF;
+        color:#00FFD9;;
+        cursor: pointer;}
+
     .f-col-2-hide{
         display:none;
         /* width:100%; */

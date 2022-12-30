@@ -11,7 +11,7 @@
     background: #F5F5F5;
     /* padding: 20px 10px 10px 10px; */
     }
-    .row-1{
+    .bb-row-1{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +20,7 @@
     width: 100%;
     height: 400px;
     }
-    .row-1>p{
+    .bb-row-1>p{
     position: relative;
     height: 56px;
     font-family: 'Italian Plate No2';
@@ -33,7 +33,7 @@
     color: #000000;
     }
 
-    .row-1>img{width: 102px;
+    .bb-row-1>img{width: 102px;
         height: 102px;}
 
     .row-2{
@@ -59,7 +59,8 @@
         align-items: center;
         
     }
-    .circle{
+
+        .circle{
         box-sizing: border-box;
         position: relative;
         width: 100px;
@@ -69,6 +70,11 @@
         border-radius: 100%;
     }
     .circle>img{width:100%; height:100%}
+    .circle>img:hover{
+  background:white;
+        color:#10827B;
+        cursor: pointer;
+}
     .s-name{
         position: relative;
         /* width: 133px; */
@@ -97,7 +103,7 @@
             height: 100%;
             min-width: 800px;
         }
-        .row-1{
+        .bb-row-1{
             margin-top: 40px;
             height: 80%;
         }
@@ -105,7 +111,7 @@
 
 </style>
 <div class="building-block">
-        <div class="row-1">
+        <div class="bb-row-1">
             <p>
                 The BUILDING BLOCKS <br />
                 OF A HEALTH SYSTEM

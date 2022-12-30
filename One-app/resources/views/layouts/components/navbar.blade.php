@@ -210,10 +210,10 @@
                     <a href="#">HOME</a>
                     <a href="#">ABOUT REPORT</a>
                     <a href="#">DATA & DOCUMENTATION</a>
+                </nav>
+                
+            </div>
         </section>
          <!-- javascript for menue -->
         <script> function openNav() { document.getElementById("menue_icon").style.width = "100%"; } function closeNav() { document.getElementById("menue_icon").style.width = "0%"; }</script>
         <!-- javascript for menue  -->
-    </nav>
-
-</div>

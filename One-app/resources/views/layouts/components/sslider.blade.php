@@ -1,5 +1,11 @@
 <style>
+  body {
+    margin: 0;
+    padding: 0;
+}  
 .s-slider {
+  /* position:absolute; */
+  /* top:200px; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,42 +14,55 @@
 padding: 0;
 }
 
-
-.row-1 {
-    margin:0;
-    padding: 0;
-    display: flex;
-    width: 100%;
-    min-width: 300px;
-    height: 400px;
-    min-width: 320px;
-    background: green;
+/* row-1 image slider start */
+.s-slider>.row-1 {
+   margin:0;
+padding: 0;
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  height: 400px;
+  min-width: 320px;
+  background: green;
 }
-.row-1 > img {
+.s-slider>.row-1 > img {
   height: 100%;
   width: 100%;
 }
+/* row-1 image slider End */
 
-.row-2 {
+/* <!-- row-2 start --> */
+.s-slider>.row-2 {
+  /* position: relative; */
+  /* top: 235px; */
   display: flex;
   min-width: 320px;
   flex-direction: column;
   width: 100%;
+  background:red;
 }
-
-.row-2-col1 {
+/* <!-- row-2-col1 start --> */
+.s-slider>.row-2>.row-2-col1 {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   width: 100%;
   min-width: 320px;
-  height: 250px;
+  height: 300px;
   background: #10827b;
   gap: 10px;
 }
+.s-slider>.row-2>.row-2-col2 {
+  ontent: center; */
+  width: 100%;
+  min-width: 320px;
+  height: 300px;
+  
+  gap: 10px;
+}
 
-.no-percent{
+.row-2-col1>.no-percent{
   display: flex;
   justify-content: right;
   /* min-width: 150px; */
@@ -62,60 +81,69 @@ color: #FFFFFF;
 font-size: 35px; 
 }
 
-.details{
-  display: flex;
+.row-2-col1>.details{
+  position:relative;
+  top:0;
   flex-direction: column;
+  height:90%;
   min-width: 200px;
   max-width: 270px;
   /* background: blue; */
-  width: 65%;
+  /* width: 65%; */
 
-  height: 90%;
+  /* height: 90%; */
 }
-.details>p{
-    display: flex;
-    margin:40px 0 0 0;
-    padding: 0;
-    /* background: red; */
-    font-family: 'Colfax';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    width: 100%;
-    text-align: left;
-    height: 90%;
+.row-2-col1>.details>p{
+  display: flex;
+  margin:40px 0 0px 0;
+  padding: 0;
+  /* background: red; */
+  font-family: 'Colfax';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+color: #FFFFFF;
+  width: 100%;
+  text-align: left;
+
+  /* height: 90%; */
 }
 
 .details>p>span{
   display: none;
 }
 
-button{
-    position: relative;
-    top:0px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-    position: relative;
-    width: 170px;
-    height: 46.37px;
-    font-family: 'Colfax';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 125% */
-    text-transform: uppercase;
-    background: #10827B;
-    border: 1px solid #000000;
+.details>button{
+  position: relative;
+  /* top:100px; */
+  box-sizing: border-box;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+width: 170px;
+height: 46.37px;
+font-family: 'Colfax';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+text-transform: uppercase;
+background: #10827B;
+border: 1px solid #000000;
 }
 
+.details>button:hover{
+  background:white;
+        color:#10827B;
+        cursor: pointer;
+}
+
+/* <!-- row-2-col2 Start --> */
 .row-2-col2 {
   margin: 0;
   padding: 0;
@@ -171,6 +199,10 @@ button{
 .add{
     color: #b51472;
 }
+/* <!-- row-2-col2 End --> */
+
+/* <!-- row-2 End --> */
+
 @media screen and (min-width: 410px) {
   .details>p{
     font-size: 14px;
@@ -181,44 +213,45 @@ line-height: 22px;
   }
 }
 @media screen and (min-width: 600px) {
-     .row-2{
+     .s-slider>.row-2{
         flex-direction: row;
         width: 100%;
         height: 300px;
     }
-     .row-2-col1{
+     .row2>.row-2-col1{
         width: 50%;
         height: 100%;
-    }
-     .row-2-col2{
+        background:red;
+      }
+      .row2>.row-2-col2{
         width: 50%;
         height: 100%;
+        background:red;
     }
 
-    .no-percent{
+    .row-2-col1>.no-percent{
       margin-top: 30px;
     }
-    .details>p{
+    .row-2-col1>.details>p{
       margin-top:15px;
       font-size: 18px;
   line-height: 25px;
     }
-    button{margin-top: 0;}
+    .details>button{margin-top: 0;}
 }
 @media screen and (min-width: 733px) {
-  button{margin-top: 0;  top:-35px;}
+  /* button{margin-top: 0;  top:-35px;} */
 }
 @media screen and (min-width: 785px) {
-  button{margin-top: 0;  top:-35px;}
+  .details>button{margin-top: 0;  top:25px;}
 }
 </style>
+<body>
     <div class="s-slider">
         <div class="row-1">
             <img src="images/about_top_pic.png">
         </div>
-        
          <div class="row-2">
-            
              <div class="row-2-col1">
                 <div class="no-percent">
                     80<sup>%</sup>
@@ -232,7 +265,9 @@ line-height: 22px;
                     <button>Read More &nbsp; ></button>
                 </div>
             </div>
-             
+             <!-- row-2-col1 End -->
+
+             <!-- row-2-col2 Start -->
             <div class="row-2-col2">
                 <p>
                     THE STate of primary
@@ -244,6 +279,10 @@ line-height: 22px;
                     </p>
                 </p>
             </div>
+            <!-- row-2-col2 End -->
+
         </div>
+        <!-- row-2 End -->
+
     </div>
-   
+    <!-- small slider component for landing page and about page End -->

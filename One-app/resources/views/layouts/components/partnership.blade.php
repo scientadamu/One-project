@@ -1,17 +1,13 @@
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        /* background: grey; */
-    }
-
-    .partnership {
+     .partnership {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         min-width: 320px;
+        background:#FFFFFF;
+        /* background:red; */
     }
 
     .partnership>.col-1 {
@@ -22,7 +18,7 @@
 
         width: 100%;
         /* height:329px; */
-        /* background: red; */
+        background:#FFFFFF;
     }
 
     .partnership>.col-2 {
@@ -33,6 +29,9 @@
         justify-content: center;
         width: 100%;
         /* background: blue; */
+        background:#FFFFFF;
+        
+        margin:0 0 50px 0;
     }
 
     .partnership>.col-1>p {
@@ -59,6 +58,15 @@
         height: 90px;
         background: orange;
     }
+    .partner-logo:hover{
+        background:white;
+        /* color:red; */
+        cursor: pointer;
+    }
+    .p-logo{
+        width:100%;
+        height:100%;
+    }
 
     .col-2>.col-2-row {
         width: 90%;
@@ -83,7 +91,7 @@
             margin: 0 100px;
             justify-content: center;
             gap: 20%;
-            background: red;
+            /* background: red; */
         }
     }
 
@@ -103,11 +111,11 @@
             margin: 0 50px;
             justify-content: center;
             gap: 50px;
-            background: red;
+            /* background: red; */
         }
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1040px) {
         .partnership {
             flex-direction: row;
             align-items: center;
@@ -125,19 +133,19 @@
     </div>
     <div class="col-2">
         <div class="col-2-row" id="col-2-row1">
-            <div class="partner-logo" id="partner-1"><img src="" alt="p-logo1"></div>
-            <div class="partner-logo" id="partner-2"><img src="" alt="p-logo2"></div>
-            <div class="partner-logo" id="partner-3"><img src="" alt="p-logo3"></div>
+            <div class="partner-logo" id="partner-1"><img class='p-logo' src="images/wordbank.png" alt="p-logo1"></div>
+            <div class="partner-logo" id="partner-2"><img class='p-logo' src="images/nhw.png" alt="p-logo2"></div>
+            <div class="partner-logo" id="partner-3"><img class='p-logo' src="images/prdc.png" alt="p-logo3"></div>
         </div>
         <div class="col-2-row" id="col-2-row2">
-            <div class="partner-logo" id="partner-4"><img src="" alt="p-logo3"></div>
-            <div class="partner-logo" id="partner-5"><img src="" alt="p-logo4"></div>
-            <div class="partner-logo" id="partner-6"><img src="" alt="p-logo6"></div>
+            <div class="partner-logo" id="partner-4"><img class='p-logo' src="images/fhbn.png" alt="p-logo3"></div>
+            <div class="partner-logo" id="partner-5"><img class='p-logo' src="images/na4h.png" alt="p-logo4"></div>
+            <div class="partner-logo" id="partner-6"><img class='p-logo' src="images/cms.png" alt="p-logo6"></div>
         </div>
         <div class="col-2-row" id="col-2-row3">
-            <div class="partner-logo" id="partner-7"><img src="" alt="p-logo5"></div>
-            <div class="partner-logo" id="partner-8"><img src="" alt="p-logo6"></div>
-            <div class="partner-logo" id="partner-9"><img src="" alt="p-logo1"></div>
+            <div class="partner-logo" id="partner-7"><img class='p-logo' src="images/prdc.png" alt="p-logo5"></div>
+            <div class="partner-logo" id="partner-8"><img class='p-logo' src="images/cms.png" alt="p-logo6"></div>
+            <div class="partner-logo" id="partner-9"><img class='p-logo' src="images/cms.png" alt="p-logo1"></div>
         </div>
     </div>
     </section>
