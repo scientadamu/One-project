@@ -262,7 +262,6 @@ text-transform: uppercase;}
         <img class="mySlides" src="images/about_top_pic.png" style="width:100%">
         <img class="mySlides" src="images/git_DP.png" style="width:100%">
         <img class="mySlides" src="images/d_state_of_primary_health_care.png" style="width:100%">    
-        <!-- <img class="mySlides" src="images/top" style="width:100%"> -->
         </div>
          <div class="row-2">
              <div class="row-2-col1">

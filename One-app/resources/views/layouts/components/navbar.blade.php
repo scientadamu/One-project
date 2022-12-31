@@ -1,10 +1,15 @@
 <style>
-    body {
+      body {
         margin: 0;
         padding: 0;
     }
+    .page-container{
+        min-width:320px;
+        max-width:100%;
+    }
+ /* nav css */
     nav {
-        position:relative;
+        position:fixed;
         left:0;
         top:0;
         display: flex;
@@ -210,10 +215,11 @@
                     <a href="#">HOME</a>
                     <a href="#">ABOUT REPORT</a>
                     <a href="#">DATA & DOCUMENTATION</a>
-                </nav>
-                
-            </div>
         </section>
+    </nav>
+
          <!-- javascript for menue -->
         <script> function openNav() { document.getElementById("menue_icon").style.width = "100%"; } function closeNav() { document.getElementById("menue_icon").style.width = "0%"; }</script>
         <!-- javascript for menue  -->
+</body>
+<html>
