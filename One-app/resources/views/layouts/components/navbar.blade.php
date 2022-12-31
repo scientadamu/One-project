@@ -4,7 +4,7 @@
         padding: 0;
     }
     nav {
-        position:fixed;
+        position:relative;
         left:0;
         top:0;
         display: flex;

@@ -97,12 +97,13 @@
 }
 .status-btn{display: flex;
     /* position: relative; */
-    top: 20px;
+    top: 18px;
     align-items: center;
     justify-content: center;
     background: black;
+    /* background: red; */
     width: 100%;
-    padding: 10px 0;
+    padding:0;
     
 }
 .status-btn>button{
@@ -112,7 +113,7 @@
     align-items: center;
     padding: 10px 20px;
     gap: 10px;
-    position: relative;  
+    /* position: relative;   */
     width: 170px;
     height: 50px;  
     left: 42px;  
@@ -124,6 +125,7 @@
     text-transform: uppercase;
     color: #000000;
     background: #00FFD9;
+    margin:20px 0px 25px 80px;
 }
 .status-btn>button:hover{
   background:white;
@@ -131,18 +133,19 @@
         cursor: pointer;
 }
 
-@media screen and (min-width: 600px) {
-    .status{position:relative; }
+@media screen and (min-width: 640px) {
+    .status{position:relative; min-width:640px;}
     .state1-2, .state3-4{flex-direction: row;}
     #state-4{display: flex;}
-    .status-btn>button{left: 185px;}
-}
-
-@media screen and (min-width: 900px) {
+    .status-btn>button{margin-left: 370px;}
+  }
+  
+  @media screen and (min-width: 900px) {
     .status-states{flex-direction: row; justify-content: center;}
     #state-4{display: none;}
     .status-btn>button{left: 335px;}
     
+    .status-btn>button{margin-left: 670px;}
 }
 
 </style>
@@ -186,8 +189,8 @@
             </div>
       </div>
         </div>
-  
         <div class="status-btn">
           <button>READ MORE ></button>
         </div>
+  
       </div>

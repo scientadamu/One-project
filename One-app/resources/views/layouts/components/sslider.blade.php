@@ -66,7 +66,7 @@ padding: 0;
   display: flex;
   justify-content: right;
   /* min-width: 150px; */
-  margin-top:80px;
+  margin-top:50px;
   /* background: red; */
   width: 27%;
   height: 90%;
@@ -212,7 +212,7 @@ line-height: 22px;
     display:contents;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
      .s-slider>.row-2{
         flex-direction: row;
         width: 100%;
@@ -240,7 +240,16 @@ line-height: 22px;
     .details>button{margin-top: 0;}
 }
 @media screen and (min-width: 733px) {
-  /* button{margin-top: 0;  top:-35px;} */
+.no-percent{  /* button{margin-top: 0;  top:-35px;} */
+width: 138px;
+/* height: 132px; */
+font-family: 'Italian Plate No2';
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+/* line-height: 150px; */
+color:red;
+text-transform: uppercase;}
 }
 @media screen and (min-width: 785px) {
   .details>button{margin-top: 0;  top:25px;}
