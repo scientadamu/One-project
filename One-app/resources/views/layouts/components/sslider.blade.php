@@ -15,20 +15,21 @@ padding: 0;
 }
 
 /* row-1 image slider start */
-.s-slider>.row-1 {
+.s-slider>#row-1 {
    margin:0;
-padding: 0;
+  padding: 0;
   display: flex;
   width: 100%;
   min-width: 300px;
-  height: 400px;
+  height: 90vh;
   min-width: 320px;
   background: green;
 }
-.s-slider>.row-1 > img {
+.s-slider>#row-1 > img {
   height: 100%;
   width: 100%;
 }
+.mySlides {display:none;}
 /* row-1 image slider End */
 
 /* <!-- row-2 start --> */
@@ -257,8 +258,11 @@ text-transform: uppercase;}
 </style>
 <body>
     <div class="s-slider">
-        <div class="row-1">
-            <img src="images/about_top_pic.png">
+        <div class="w3-content w3-section" id="row-1">
+        <img class="mySlides" src="images/about_top_pic.png" style="width:100%">
+        <img class="mySlides" src="images/git_DP.png" style="width:100%">
+        <img class="mySlides" src="images/d_state_of_primary_health_care.png" style="width:100%">    
+        <!-- <img class="mySlides" src="images/top" style="width:100%"> -->
         </div>
          <div class="row-2">
              <div class="row-2-col1">
@@ -294,4 +298,20 @@ text-transform: uppercase;}
         <!-- row-2 End -->
 
     </div>
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
     <!-- small slider component for landing page and about page End -->
