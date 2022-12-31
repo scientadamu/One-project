@@ -43,6 +43,7 @@
     @include('layouts\components\partnership')
     <!-- building block -->
     @include('layouts\components\Footer')
+    <!-- @include('layouts\components\video-effect') -->
     
 </main>
                 
