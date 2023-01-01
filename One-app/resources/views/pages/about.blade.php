@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Landing Page</title>
+        <title>About Page</title>
     </head>
    <style> body{margin:9; padding:0;}</style>
 <body class="antialiased">
@@ -15,14 +15,9 @@
 
     @include('layouts\components\navbar')
     <main>
-    @include('layouts\components\sslider')
-    @include('layouts\components\states')
-    @include('layouts\components\building-block')
-    @include('layouts\components\features')
-    @include('layouts\components\partnership')
-    <!-- building block -->
+    @include('layouts\components\abt-slider')
+    @include('layouts\components\abt-key-obj')
     @include('layouts\components\Footer')
-    <!-- @include('layouts\components\video-effect') -->
     
 </main>
                 
