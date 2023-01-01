@@ -163,27 +163,7 @@ max-height:80%;
             <img class="mySlides" src="images/d_state_of_primary_health_care.png" style="width:100%">    
         </div>
 
-        <!-- <div class="row-2">
-            <div class="row-2-col1">
-            <p>
-            Since 2001,nigeria has consistently committed less than 7% of the total
-            national annual budget to health, leaving a
-            major gap in the financial resources
-            required to drive the  health system.
-            </p>
-            </div>
-             
-            <div class="row-2-col2">
-                <p>
-                    THE STate of primary
-                    health care service delivery <span class="in">&nbsp;in&nbsp;</span>&nbsp;nigeria
-                    <div class="hr">&nbsp;</div>
-                    <p>
-                        <span class="add">+ &nbsp;</span>
-                        &nbsp;2019 -2021
-                    </p>
-                </p>
-            </div> -->
+       
             <!-- row-2-col2 End -->
          </div>
        
