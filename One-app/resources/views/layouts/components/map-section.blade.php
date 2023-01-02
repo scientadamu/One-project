@@ -1,241 +1,386 @@
 <style>
-    .map_section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: #f5f5f5;
-  margin: 0% 0;
-}
+  .map_section{
+    position:relative;
+    top:120px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  /* background:grey; */
+  width:100%;
 
-#map_bars {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  align-items: center;
+  min-width:320px;
 }
-
-.bar {
-  display: flex;
-}
-
-.l_bar {
-  display: flex;
-  justify-content: center;
-  font-family: "Colfax";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  align-items: center;
-  color: black;
-  width: 87px;
-  height: 40px;
-  background: #dee5e4;
-  border-radius: 20px 0px 0px 20px;
-}
-
-.r_bar {
-  width: 260px;
-  height: 40px;
-  background: #10837b;
-  border-radius: 0px 20px 20px 0px;
-  -webkit-border-radius: 0px 20px 20px 0px;
-  -moz-border-radius: 0px 20px 20px 0px;
-  -ms-border-radius: 0px 20px 20px 0px;
-  -o-border-radius: 0px 20px 20px 0px;
-}
-
-.state_no {
-  font-family: "Colfax";
-  margin-left: 5px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 21px;
-  color: #000000;
-}
-
-#map {
-  background-image: url(../images/map.png);
-  height: 70vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.bar1 {
-  margin: 0 auto;
-  width: 80%;
-  height: 26px;
-  background: #dee5e4;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.bar1a {
-  width: 50%;
-  height: 26px;
-  background: #b51472;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.bar2 {
-  margin: 20px auto;
-  width: 80%;
-  height: 26px;
-  background: #10837b;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-.bar2a {
-  width: 50%;
-  height: 26px;
-  background: #dee5e4;
-  border-radius: 20px;
-}
-
-.map_section {
-  flex-direction: row;
-  flex-wrap: wrap-;
-}
-
-@media screen and (min-width: 1000px) {
-  .map_section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 150px 0 0 0;
-    display: flex;
-    flex-direction: row;
+  .map-section-top-border{
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    width:100%; 
+    height:20px;
+    /* background:yellow; */
   }
-  .map_tag {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  .map-section-top-border-r{ background: #10827B; width: 50%; height:100%;}
+  .map-section-top-border-l{ background: #00FFD9; width: 50%; height:100%;}
+  main{
+    display:flex;
+    flex-direction:column-reverse;
+    /* background:red; */
+    width:100%;
+    margin:0px 0;
+    gap:15px;
+    height:70%
+  }  
+  .map-bars{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    /* background:blue; */
+  }
+  .all-bars{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    width:100%;
+    /* background:red; */
+  }
+  .bar{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:90%;
+    height:40px;
+    /* background:yellow; */
+  }
+  .state{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 87px;
+    height: 40px;
+    background: #DEE5E4;
+    border-radius: 20px 0px 0px 20px;
   }
 
-  .assesment_retangle {
-    display: flex;
-    justify-content: center;
-    min-width: 300px;
-    max-width: 500px;
-    height: 173px;
-    position: absolute;
-    left: 15%;
-    top: 48%;
+  .progress-bar{
+    min-width:100px;
+    width: 260px;
+    background: #10837B;
+    border-radius: 0px 20px 20px 0px;
   }
-  .assesment_p {
-    margin: 10px auto;
-    font-size: 26px;
-    line-height: 25px;
+  .states-name{
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .statee-no{
+    /* background: white; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 0 0 5px;
+  }
+  .statee-no>.no{
+    font-family: 'Colfax';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
   }
 
-  #single_bar_r {
-    background: #10827b;
-    width: 100%;
-    height: 20px;
+  .main-map{
+    display:flex;
+    width:100%;
+    height:200px;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    min-width:320px;
+    min-height:500px;
+    /* background:green; */
   }
-  #single_bar_l {
-    background: #00ffd9;
-    width: 50%;
-    height: 20px;
+  .map{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:85%;
+    height:90%;
+    /* background:blue;    */
   }
-}
+  .main-map>.map>img{
+    width:100%;
+    height:80%;
+  }
+  .map-section-button-border-responsive{
+    display:flex; 
+    flex-direction:column;
+    justify-content:center; 
+    align-items:center; 
+    width:80%; 
+    gap:15px;
+    /* height:40px; */
+    /* margin:0 50px; */
+    /* background:red; */
+    
+  }
+  .map-section-button-border{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:90%;
+    height:40px;
+    gap:20px;
+    /* margin:0 50px; */
+    /* background:red; */
+  }
+  .map-buttom-border-top{
+    display:flex;  
+    /* flex-direction:column; */
+    align-items:center; 
+    width:100%; 
+    height:10px;
+    margin:0 50px;
+    background:yellow;
+  }
+  .map-buttom-border-buttom{
+    display:flex;  
+    /* flex-direction:column; */
+    align-items:center; 
+    width:100%; 
+    height:10px;
+    margin:0 50px;
+    background:yellow;
+  }
+  .map-buttom-border-top>.map-buttom-border-l{ background: #B51472; width: 50%; height:100%;}
+  .map-buttom-border-top>.map-buttom-border-r{ background: #DEE5E4; width: 50%; height:100%;}
+  
+  .map-buttom-border-buttom>.map-buttom-border-l{ background: #B51472; width: 50%; height:100%;}
+  .map-buttom-border-buttom>.map-buttom-border-r{ background: #DEE5E4; width: 50%; height:100%;}
+  .map-buttom-border-buttom>#l-green{ background: #10837B; width: 50%; height:100%;}
 
+  .map-buttom-border{
+    display:none; 
+    justify-content:flex-end; 
+    align-items:center; 
+    width:100%; 
+    height:10px;
+    margin:0 50px;
+    /* background:yellow; */
+  }
+  .map-buttom-border-l{ background: #B51472; width: 20%; height:100%;}
+  .map-buttom-border-r{ background: #DEE5E4; width: 20%; height:100%;}
+  #l-green{ background: #10837B;; width: 20%; height:100%;}
+  
+
+  @media screen and (min-width:670px) {
+    
+    main{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin:50px 0 50px 0;
+    /* background:red; */
+  }
+  .main-map{
+    width:50%;
+    height:100%;
+  }
+    .map-bars{
+      width:50%;
+      height:100%;
+    }
+    .map-section-button-border-responsive{
+    display:none; 
+  }
+    .map-buttom-border{
+    display:flex; }
+  }
 
 </style>
-<div id="single_bar_r">
-    <div id="single_bar_l">.</div>
-</div>
 <section class="map_section">
-    <div id="map_bars">
-        <div class="bar">
-            <div class="l_bar">
-                <p class="states">FCT</p>
+  <div class="map-section-top-border">
+    <div class="map-section-top-border-l"></div>
+    <div class="map-section-top-border-r"></div>
+  </div>
+  
+  <main>
+   <div class="map-bars">
+      <div class="all-bars"> 
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >FCT</span> 
+          </div>
+
+          <div class="progress-bar">
             </div>
-            <div class="r_bar"></div>
-            <p class="state_no">65</p>
-        </div>
 
-        <div class="bar">
-            <div class="l_bar">
-                <p class="states">Enugu</p>
+          <div class="statee-no">
+            <span class="no" >68</span> 
+          </div>
+        </div> 
+
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Enugu</span> 
+          </div>
+
+          <div class="progress-bar">
             </div>
-            <div class="r_bar"></div>
-            <p class="state_no">66</p>
+
+          <div class="statee-no">
+            <span class="no" >66</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Anambra</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">65</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Anambra</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Ekiti</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">63</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Ekiti</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >63</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Delta</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">61</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Delta</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >61</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Abia</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">65</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Abia</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Anambra</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">65</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Anambra</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Anambra</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">66</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Anambra</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Anambra</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">65</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Anambra</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Anambra</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">68</p>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Anambra</span> 
+          </div>
+
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
         </div>
 
-        <div class="bar">
-            <div class="l_bar"><p class="states">Anambra</p></div>
-            <div class="r_bar"></div>
-            <p class="state_no">69</p>
-        </div>
+        <div class="bar"> 
+          <div class="state">
+            <span class="states-name" >Anambra</span> 
+          </div>
 
+          <div class="progress-bar">
+            </div>
+
+          <div class="statee-no">
+            <span class="no" >65</span> 
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="map_tag">
-        <div id="map"></div>
-        <div class="map_bar2">
-            <div class="bar1"><div class="bar1a"></div></div>
-        </div>
-        <div class="bar2"><div class="bar2a"></div></div>
+
+    <div class="main-map">
+      <div class="map">
+        <img src="images/map.png"alt="map">
+      </div> 
+      <div class="map-section-button-border-responsive">
+          <div class="map-buttom-border-top">
+            <div class="map-buttom-border-l"></div>
+            <div class="map-buttom-border-r"></div>
+          </div>
+          <div class="map-buttom-border-buttom">
+            <div class="map-buttom-border-r"></div>
+            <div class="map-buttom-border-l" id="l-green"></div>
+          </div>
+        
+
+      </div>
     </div>
+  </main>
+
+  <div class="map-section-button-border">
+    <div class="map-buttom-border top">
+      <div class="map-buttom-border-l"></div>
+      <div class="map-buttom-border-r"></div>
+    </div>
+    <div class="map-buttom-border buttom">
+      <div class="map-buttom-border-r"></div>
+      <div class="map-buttom-border-l" id="l-green"></div>
+    </div>
+  </div> 
 </section>
-
-<!-- /* -------------------------map_section ------------------- */ -->
