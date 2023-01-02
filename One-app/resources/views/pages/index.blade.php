@@ -13,16 +13,16 @@
     
 
 
-    @include('layouts\components\navbar')
     <main>
-    @include('layouts\components\sslider')
-    @include('layouts\components\states')
-    @include('layouts\components\building-block')
-    @include('layouts\components\features')
-    @include('layouts\components\partnership')
-    <!-- building block -->
-    @include('layouts\components\Footer')
-    <!-- @include('layouts\components\video-effect') -->
+        @include('layouts\components\sslider')
+        @include('layouts\components\states')
+        @include('layouts\components\building-block')
+        @include('layouts\components\features')
+        @include('layouts\components\partnership')
+        <!-- building block -->
+        @include('layouts\components\Footer')
+        <!-- @include('layouts\components\video-effect') -->
+        @include('layouts\components\navbar')
     
 </main>
                 

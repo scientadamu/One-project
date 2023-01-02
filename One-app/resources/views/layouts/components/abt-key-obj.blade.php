@@ -102,7 +102,7 @@
     }
 
 @media screen and (min-width: 600px) {
-    .abt-details{flex-direction:row; height:300px;}
+    .abt-details{display:flex; flex-direction:row; height:300px;}
     .abt-details-col-1{display:flex; justify-content:center; align-items:center;height:100%; width:50%;}
     .abt-details-col-1>p{width:290px;max-width:290px;}
     .abt-details-col-2{height:100%; width:50%;}

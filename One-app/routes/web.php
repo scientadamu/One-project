@@ -1,5 +1,5 @@
 <?php
 use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
-    return view('pages.report');
+    return view('pages.about');
 });

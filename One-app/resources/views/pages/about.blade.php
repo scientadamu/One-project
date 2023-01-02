@@ -13,11 +13,11 @@
     
 
 
-    @include('layouts\components\navbar')
     <main>
-    @include('layouts\components\abt-slider')
-    @include('layouts\components\abt-key-obj')
-    @include('layouts\components\Footer')
+        @include('layouts\components\abt-slider')
+        @include('layouts\components\abt-key-obj')
+        @include('layouts\components\Footer')
+        @include('layouts\components\navbar')
     
 </main>
                 
