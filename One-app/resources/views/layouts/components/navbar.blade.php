@@ -201,9 +201,9 @@
         <section class="menue">
             <button class="btn">DOWNLOAD REPORT</button>
             <ul class="menue-list">
-                <li><a href="#" class="menue-item">HOME</a></li>
-                <li><a href="#" class="menue-item">ABOUT REPORT</a></li>
-                <li><a href="#" class="menue-item">DATA & DOCUMENTATION</a></li>
+                <li><a href="/index" class="menue-item">HOME</a></li>
+                <li><a href="/about" class="menue-item">ABOUT REPORT</a></li>
+                <li><a href="/report" class="menue-item">DATA & DOCUMENTATION</a></li>
             </ul>
         </section>
         <section class="h-toggle-section">

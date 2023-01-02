@@ -16,10 +16,7 @@
   padding: 0;
   display: flex;
   width: 100%;
-  /* min-width: 300px; */
   min-height: 100vh;
-  /* min-width: 320px; */
-  /* background: green; */
 }
 .abt-s-slider>#row-1 > img {
   height: 100vh;
@@ -35,8 +32,6 @@
   display: flex;
   min-width: 320px;
   flex-direction: column;
-  /* width: 100%; */
-  /* height: 200px; */
 }
 /* <!-- row-2-col1 start --> */
 .abt-s-slider>.row-2>.row-2-col1 {
@@ -137,7 +132,7 @@ max-height:80%;
         flex-direction: row;
         width: 100%;
         height: 300px;
-        background:green;
+        /* background:green; */
     }
     .abt-s-slider>.row2>.row-2-col1{
         
